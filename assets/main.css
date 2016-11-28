@@ -1,0 +1,198 @@
+html {
+  background-color: #65bcd4;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/*
+    html {
+      animation: colorchange 10s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s 
+      -webkit-animation: colorchange 50s; /* Chrome and Safari 
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate 
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }*/
+
+
+h1 {
+  position: relative;
+  text-align: center;
+  margin: 10px 0;
+  padding: 0;
+  color: white;
+}
+
+form {
+  position: relative;
+  max-width: 400px;
+  width: calc(100% - 20px);
+  margin: auto auto;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+#game-pin {
+  margin-top: 0;
+}
+
+.setup-input {
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.submit-input {
+  border: none;
+  padding: 0;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #777;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-input:hover {
+  background-color: #d5d5d5;
+}
+
+.submit-input:active {
+  background-color: #d5d5d5;
+}
+
+a {
+  position: relative;
+  color: white;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #d5d5d5;
+}
+
+
+
+.bgcolorFrames 0% {
+    background-color: #45a3e5
+}
+
+.bgcolorFrames 17% {
+    background-color: #3cc
+}
+
+.bgcolorFrames 34% {
+    background-color: #66bf39
+}
+
+.bgcolorFrames 51% {
+    background-color: #ffa602
+}
+
+.bgcolorFrames 67% {
+    background-color: #eb670f
+}
+
+.bgcolorFrames 84% {
+    background-color: #f35
+}
+
+.bgcolorFrames 100% {
+    background-color: #864cbf
+}
+
+@-webkit-keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+    17% {
+        background-color: #3cc
+    }
+    34% {
+        background-color: #66bf39
+    }
+    51% {
+        background-color: #ffa602
+    }
+    67% {
+        background-color: #eb670f
+    }
+    84% {
+        background-color: #f35
+    }
+    100% {
+        background-color: #864cbf
+    }
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+    17% {
+        background-color: #3cc
+    }
+    34% {
+        background-color: #66bf39
+    }
+    51% {
+        background-color: #ffa602
+    }
+    67% {
+        background-color: #eb670f
+    }
+    84% {
+        background-color: #f35
+    }
+    100% {
+        background-color: #864cbf
+    }
+}
+
+.animated-background, html {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 20s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    background-color: #45a3e5
+}
+
+.animated-background--fast {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s
+}
+
+
+.small {font-size: 10px;}
+
+.title {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    font-style: ;
+    z-index: 2;
+}
