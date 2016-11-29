@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"https://github.com/unixpickle/kahoot-hack/kahoot"
+	"github.com/unixpickle/kahoot-hack/kahoot"
 )
 
 var usageSemaphore = make(chan struct{}, 10)
