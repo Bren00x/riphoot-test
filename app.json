@@ -7,8 +7,8 @@
     "sample",
     "example"
   ],
-  "image": "heroku/go:1.6",
-  "mount_dir": "src/github.com/Bren00x/riphoot-test",
-  "website": "http://github.com/Bren00x/riphoot-test",
-  "repository": "http://github.com/Bren00x/riphoot-test"
+  "image": "heroku/go:1.7.3",
+  "mount_dir": "src/github.com/unixpickle/kahoot-hack/kahoot",
+  "website": "http://github.com/unixpickle/kahoot-hack/kahoot",
+  "repository": "http://github.com/unixpickle/kahoot-hack/kahoot"
 }
