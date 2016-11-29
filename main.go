@@ -72,7 +72,7 @@ func handleHack(w http.ResponseWriter, r *http.Request) {
 
 func floodHack(gamePin int, nickname string) bool {
 	log.Println("Flood hack:", gamePin, "with nickname", nickname)
-	for i := 0; i < 20; i++ {
+	for i := 0; i < 2000; i++ {
 		conn, err := kahoot.NewConn(gamePin)
 		if err != nil {
 			return false
