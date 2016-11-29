@@ -15,7 +15,7 @@ var usageSemaphore = make(chan struct{}, 10)
 
 func main() {
 	if len(os.Args) != 2 {
-		fmt.Fprintln(os.Stderr, "Usage: site <port>")
+		fmt.Fprintln(os.Stderr, "Usage: site <8080>")
 		os.Exit(1)
 	}
 	_, err := strconv.Atoi(os.Args[1])
@@ -33,9 +33,8 @@ func main() {
 			http.ServeFile(w, r, "assets/"+path)
 		}
 	})
-    http.ListenAndServe(":"+port, nil)
 
-	//http.ListenAndServe(":"+os.Args[1], nil)
+	http.ListenAndServe(":"+os.Args[1], nil)
 }
 
 func handleHack(w http.ResponseWriter, r *http.Request) {
@@ -73,7 +72,7 @@ func handleHack(w http.ResponseWriter, r *http.Request) {
 
 func floodHack(gamePin int, nickname string) bool {
 	log.Println("Flood hack:", gamePin, "with nickname", nickname)
-	for i := 0; i < 20; i++ {
+	for i := 0; i < 2000; i++ {
 		conn, err := kahoot.NewConn(gamePin)
 		if err != nil {
 			return false
