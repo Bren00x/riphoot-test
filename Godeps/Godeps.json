@@ -1,6 +1,16 @@
 {
-	"ImportPath": ".",
+	"ImportPath": "riphoot-test",
 	"GoVersion": "go1.7",
 	"GodepVersion": "v75",
-	"Deps": []
+	"Deps": [
+		{
+			"ImportPath": "github.com/gorilla/websocket",
+			"Comment": "v1.0.0-39-ge8f0f8a",
+			"Rev": "e8f0f8aaa98dfb6586cbdf2978d511e3199a960a"
+		},
+		{
+			"ImportPath": "github.com/unixpickle/kahoot-hack/kahoot",
+			"Rev": "108a5f8551adb71d3eb1bb7a698e0b04517431e3"
+		}
+	]
 }
