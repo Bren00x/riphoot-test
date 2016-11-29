@@ -15,7 +15,7 @@ var usageSemaphore = make(chan struct{}, 10)
 
 func main() {
 	if len(os.Args) != 2 {
-		fmt.Fprintln(os.Stderr, "Usage: site <8080>")
+		fmt.Fprintln(os.Stderr, "Usage: site <port>")
 		os.Exit(1)
 	}
 	_, err := strconv.Atoi(os.Args[1])
